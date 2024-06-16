@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DefaultLoginLayouComponent } from '../../component/default-login-layou/default-login-layou.component';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { PrimaryInputComponent } from '../../component/primary-input/primary-input.component';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,8 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   imports: [
     DefaultLoginLayouComponent,
     //Precisa colocar o ReactiveFormsModule para criar o formulário
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PrimaryInputComponent,
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
